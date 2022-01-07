@@ -15,6 +15,16 @@ public class Question {
     private Type type;
     private Category category;
 
+    public Question() {
+    }
+
+    public Question(String id, String userId, String question, Type type, Category category) {
+        this.id = id;
+        this.userId = userId;
+        this.question = question;
+        this.type = type;
+        this.category = category;
+    }
 
     public String getId() {
         return id;
